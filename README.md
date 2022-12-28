@@ -26,6 +26,8 @@
 
 ```bash
   git clone https://github.com/IgorAvelino/AWP
+```
+```bash
   cd .\AWP
 ```
 
