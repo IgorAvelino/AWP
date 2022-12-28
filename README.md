@@ -28,7 +28,7 @@
   git clone https://github.com/IgorAvelino/AWP
 ```
 ```bash
-  cd .\AWP
+  cd AWP
 ```
 
 - Install the requirements.txt for use the python3 external libraries:
