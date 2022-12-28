@@ -2,7 +2,14 @@
 # AWP
 <h3 align="center"> Fast, Powerful and Nondiscrete Pentest toolkit </h3>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/77363934/209717836-04a785f7-9719-47ed-8b42-cd814d351e37.png">
+  <img src="https://user-images.githubusercontent.com/77363934/209743927-e48a6e37-809f-481a-9281-765b92a13793.png">
+  
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Author-Igor Avelino (S1f__0)-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Maintained-Yes-purple?style=flat-square">
+  <img src="https://img.shields.io/badge/Written%20In-Python-darkcyan?style=flat-square">
 </p>
 
 ##
@@ -42,5 +49,3 @@
 | :---------- | :--------- | :---------------------------------- |
 | `HOST` | `string` | **Required**. The target domain |
 | `TIMEOUT` | `INT` | Optional. The time to wait to close the connection if the port does not respond, in milliseconds |
-
-
