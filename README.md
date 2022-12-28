@@ -25,7 +25,7 @@
 - After this, clone the repository:
 
 ```bash
-  git clone --- LINK ---
+  git clone https://github.com/IgorAvelino/AWP
   cd .\AWP
 ```
 
