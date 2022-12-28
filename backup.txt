@@ -1,0 +1,54 @@
+
+# AWP
+## Ultra Fast, Powerful and Nondiscrete Pentest toolkit
+
+
+![AWP how_to_use.py file](https://user-images.githubusercontent.com/77363934/209717836-04a785f7-9719-47ed-8b42-cd814d351e37.png)
+
+
+## Instalation
+- First of all, you need [Python3](https://www.python.org/downloads/)
+
+- After this, clone the repository:
+
+```bash
+  git clone --- LINK ---
+  cd .\AWP
+```
+
+- Install the requirements.txt for use the python3 external libraries:
+```bash
+    pip install -r requirements.txt
+```
+- And that's it, just read the how_to_use.py file and have fun tests :)
+```bash
+    python how_to_use.py
+```
+## Documentation
+
+## Documentation of Python Scripts
+
+### Port Scanning a Host
+
+```bash
+  python port_scan.py [ HOST ] [ Optional: TIMEOUT ]
+```
+
+| Parameter   | Type       | Description                           |
+| :---------- | :--------- | :---------------------------------- |
+| `HOST` | `string` | **Required**. The target domain |
+
+#### Retorna um item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **required**. O ID do item que você quer |
+
+#### add(num1, num2)
+
+Recebe dois números e retorna a sua soma.
+
