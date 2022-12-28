@@ -1,6 +1,6 @@
 
 # AWP
-<h3 align="center"> Fast, Powerful and Nondiscrete Pentest toolkit </h3>
+<h3 align="center"> Fast, Powerful and Nondiscrete Pentest Toolkit </h3>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/77363934/209743927-e48a6e37-809f-481a-9281-765b92a13793.png">
   
