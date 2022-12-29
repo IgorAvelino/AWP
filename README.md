@@ -51,3 +51,13 @@
 | :---------- | :--------- | :---------------------------------- |
 | `HOST` | `string` | **Required**. The target domain |
 | `TIMEOUT` | `INT` | Optional. The time to wait to close the connection if the port does not respond, in milliseconds |
+  
+  ### Crawling a Website
+
+```bash
+  python web_crawler.py [ DOMAIN.COM ]
+```
+
+| Parameter   | Type       | Description                           |
+| :---------- | :--------- | :---------------------------------- |
+| `DOMAIN.COM` | `string` | **Required**. The target domain to craw |
