@@ -69,9 +69,9 @@ def init():
         print(ERRORS[0])
         sys.exit()
     
-    print(f'\n\033[7;32m[*]\033[0;0;0m \033[35m{len(SUM)}\033[0;0;0m Open Ports\033[33m!\033[0;0;0m')
+    print(f'\n\033[1;32m[*]\033[0;0;0m \033[35m{len(SUM)}\033[0;0;0m Open Ports\033[33m!\033[0;0;0m')
     print(f'\n\033[1;33m[i]\033[0;0;0m \033[35m1000\033[0;0;0m Scanned Ports\033[33m!\033[0;0;0m')
-    print(f'\n\033[1;33m[i]\033[0;0;0m Tempo de Execução: \033[31m{temp_fim - temp_inicio:,.3f} Segundos \033[0;0;0m\n')
+    print(f'\n\033[1;33m[i]\033[0;0;0m Execution Time: \033[31m{temp_fim - temp_inicio:,.3f} seconds \033[0;0;0m\n')
 
 
 def ping(host):
