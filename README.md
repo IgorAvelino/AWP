@@ -2,7 +2,7 @@
 # AWP
 <h3 align="center"> Fast, Powerful and Indiscreet Pentest Toolkit </h3>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/77363934/209743927-e48a6e37-809f-481a-9281-765b92a13793.png">
+  <img src="https://github.com/user-attachments/assets/4fad7514-74e0-4e40-b53d-39b53889b792">
   
 </p>
 <p align="center">
