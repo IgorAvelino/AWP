@@ -6,7 +6,7 @@
   
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Author-Igor Avelino (S1f__0)-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Author-Igor Avelino (x0S1f)-blue?style=flat-square">
   <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Maintained-Yes-purple?style=flat-square">
   <img src="https://img.shields.io/badge/Written%20In-Python-darkcyan?style=flat-square">
@@ -44,13 +44,16 @@
 ### Port Scanning a Host
 
 ```bash
-  python port_scan.py [ HOST ] [ Optional: TIMEOUT ]
+  python port_scan.py [-h] -t HOST [--timeout TIMEOUT] [--threads THREADS] [-o OUTPUT] [--more]
 ```
 
 | Parameter   | Type       | Description                           |
 | :---------- | :--------- | :---------------------------------- |
 | `HOST` | `string` | **Required**. The target domain |
-| `TIMEOUT` | `INT` | Optional. The time to wait to close the connection if the port does not respond, in milliseconds |
+| `TIMEOUT` | `int` | Optional. The time to wait to close the connection if the port does not respond, in milliseconds |
+| `THREADS` | `int` | Optional. Number of threads running (default: 30) |
+| `OUTPUT` | `string` | Optional. Output file for the open ports (default: None). |
+| `MORE` | `N/A` | Optional. Scan 10k most common ports (default: Top 1k). |
   
   ### Crawling a Website
 
