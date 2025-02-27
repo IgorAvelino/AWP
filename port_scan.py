@@ -16,7 +16,7 @@ ERRORS = []
 SUM = []
 
 
-parser = argparse.ArgumentParser(description='\033[31mFast and Indiscreet Port Scan by 0xS1f_\033[0;0;0m')
+parser = argparse.ArgumentParser(description='\033[31mFast and Indiscreet Port Scan by 0xS1f\033[0;0;0m')
 
 
 art = """\n
@@ -27,7 +27,7 @@ art = """\n
 ⠈⠃⠙⢿⣧\033[31m⣙⠶⣿⣿⡷⢘\033[0;0;0m⣡⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣷\033[31m⣝⡳⠶⠶⠾⣛\033[0;0;0m⣵⡿⠋⠀⠀
 ⠀⠀⠀⠀\033[31m⠉⠻⣿⣶⠂⠘⠛⠛⠛⢛⡛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⢻⠀⠉⠒⠻⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀ ⠁⠀
-⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ \033[34mby S1f_0\033[31m
+⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ \033[34mby 0xS1f\033[31m
                                                     
 \033[0;0;0m"""
 

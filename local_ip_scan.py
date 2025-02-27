@@ -1,6 +1,6 @@
-import subprocess
-from concurrent.futures import ThreadPoolExecutor
 import argparse
+import pythonping
+from concurrent.futures import ThreadPoolExecutor
 
 
 parser = argparse.ArgumentParser(description='\033[31mLAN Scan by 0xS1f_\033[0;0;0m')
@@ -8,31 +8,19 @@ parser = argparse.ArgumentParser(description='\033[31mLAN Scan by 0xS1f_\033[0;0
 
 def sys_options():
     parser.add_argument('-n', '--network', type=str, dest='network_ip', default=None,
-                        help='The LAN Network base IP (REQUIRED)', required=True)
+                        help='The LAN Network base IP ex.:192.168.1 (REQUIRED)', required=True)
 
     return parser.parse_args()
 
 
 def ping(ip):
     try:
-        result = subprocess.run(
-            ["ping", "-c", "1", "-w", "1", ip],  # Linux/MacOS
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
-        )
-        if result.returncode == 0:
+        ping_result = pythonping.ping(target=ip, count=1, timeout=4)
+        if ping_result.stats_success_ratio == 1:
             return ip
-    except FileNotFoundError:
-        try:
-            result = subprocess.run(
-                ["ping", "-n", "1", "-w", "1000", ip],  # Windows
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE
-            )
-            if result.returncode == 0:
-                return ip
-        except Exception as e:
-            print(f'\n\033[31mFATAL-ERROR:\033[0;0;0m << {e} >>\n')
+    
+    except Exception as e:
+        print(f'\n\033[31mFATAL-ERROR:\033[0;0;0m << {e} >>\n')
     return None
 
 
