@@ -64,3 +64,13 @@
 | Parameter   | Type       | Description                           |
 | :---------- | :--------- | :---------------------------------- |
 | `DOMAIN.COM` | `string` | **Required**. The target domain to craw |
+
+  ### Local IP Scan
+
+```bash
+  python local_ip_scan.py [-h] -n NETWORK_IP
+```
+
+| Parameter   | Type       | Description                           |
+| :---------- | :--------- | :---------------------------------- |
+| `NETWORK_IP` | `string` | **Required**. The LAN Network base IP ex.:192.168.1 |
