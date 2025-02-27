@@ -3,7 +3,7 @@ import pythonping
 from concurrent.futures import ThreadPoolExecutor
 
 
-parser = argparse.ArgumentParser(description='\033[31mLAN Scan by 0xS1f_\033[0;0;0m')
+parser = argparse.ArgumentParser(description='\033[31mLAN Scan by 0xS1f\033[0;0;0m')
 
 
 def sys_options():
